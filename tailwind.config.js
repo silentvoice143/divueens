@@ -36,7 +36,7 @@ module.exports = {
         lightpink: "#ffe8f0",
         darkpink: "#ff5bb1",
         navpink: "#fcaad2",
-        cardpink: "#f1c4d3",
+        cardpink: "#f2c5d4",
       },
     },
   },
