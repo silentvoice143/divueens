@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>OTP Verification</title>
+  </head>
+  <body class="formbody">
+    <div class="formwrap">
+      <form id="emailForm" class="form">
+        <h1 class="heading">Forget Password</h1>
+        <label for="email" class="label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Registered Mail"
+        />
+        <div class="btnwrap">
+          <button type="button" class="btn">Send Code</button>
+        </div>
+      </form>
+
+      <div id="otpSection" class="otpwrap">
+        <h1 class="heading">OTP Verification</h1>
+        <label for="otp" class="label"
+          >Enter The OTP We've Sent To Your Email</label
+        >
+        <div class="otpContainer">
+          <!-- OTP input boxes -->
+          <input type="text" id="otpinput1" />
+          <input type="text" id="otpinput2" />
+          <input type="text" id="otpinput3" />
+          <input type="text" id="otpinput4" />
+          <input type="text" id="otpinput5" />
+          <input type="text" id="otpinput6" />
+        </div>
+        <button type="button" class="btn">Send Code</button>
+      </div>
+    </div>
+  </body>
+</html>
