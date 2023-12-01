@@ -1,84 +1,82 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Set background color */
 .formbody {
-    background-color: #FFEEFB ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Style for formwrap */
-  .formwrap {
+  background-color: #ffeefb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    line-height: 40px;
-  }
-  .heading{
-    width:227px;
-    height:35px;
-    color:#515151;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 30px;
-  }
-  /* Style for form elements */
-  .label {
-    display: block;
-    color: #9A9A9A;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 16px; /* Set label text color */
-  }
-  
-  .form input {
-    width: 417px;
-    height:46px;
-    border: 1px solid #DADADA; /* Set input border color */
-    border-radius: 12px;
-    color: #B7B7B7;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 18px;
-    padding-left:10px;
-  }
-  
-  /* Style for buttons */
-  
-  .btn {
-    margin-top: 20px;
-    height:46px;
-    width: 417px;
-    border-radius: 12px;
-    border-color: #FDCCDC;
-    background-color:#FDCCDC;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18.75px;
-  }
-  
-  /* Style for OTP section */
-  .otpwrap{
-    margin-top:5rem;
-  }
-  .otptxt {
-    color: #4a5568; /* Set OTP label text color */
-  }
-  
-  /* Style for OTP*/
+/* Style for formwrap */
+.formwrap {
+  line-height: 40px;
+}
+.heading {
+  width: 227px;
+  height: 35px;
+  color: #515151;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 30px;
+}
+/* Style for form elements */
+.label {
+  display: block;
+  color: #9a9a9a;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px; /* Set label text color */
+}
 
-  .otpContainer{
-    display: flex;
-    justify-content: space-between;
-    max-width:90%;
-  }
-  #otpinput{
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
-    border: 1px solid #B8B8B8;
-    background-color: #FFECFB;
-  }
+.form input {
+  width: 417px;
+  height: 46px;
+  border: 1px solid #dadada; /* Set input border color */
+  border-radius: 12px;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* Style for buttons */
+
+.btn {
+  margin-top: 20px;
+  height: 46px;
+  width: 417px;
+  border-radius: 12px;
+  border-color: #fdccdc;
+  background-color: #fdccdc;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+/* Style for OTP section */
+.otpwrap {
+  margin-top: 5rem;
+}
+.otptxt {
+  color: #4a5568; /* Set OTP label text color */
+}
+
+/* Style for OTP*/
+
+.otpContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+}
+.otpinput {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  border: 1px solid #b8b8b8;
+  background-color: #ffecfb;
+}
