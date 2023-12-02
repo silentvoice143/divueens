@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -65,10 +65,10 @@
     <title>Cart</title>
   </head>
   <body>
-    <section class="flex flex-col sm:flex-row mx-7">
+    <section class="flex flex-col xl:flex-row mx-7">
       <!--?-------------------- LEFT SIDE START -------------------- -->
 
-      <div class="min-h-screen w-[58rem] sm:w-[64.5rem] bg-[#ffffff]">
+      <div class="min-h-screen w-[58rem] xl:w-[64.5rem] bg-[#ffffff]">
         <!-- -------------- LOGO --------------  -->
         <header class="ml-4 mt-3">
           <img
@@ -82,17 +82,17 @@
         <div class="ml-10 mt-12">
           <div>
             <!-- -------------- HEADING --------------  -->
-            <div class="sm:mr-24 flex justify-between text-3xl font-medium">
+            <div class="xl:mr-24 flex justify-between text-3xl font-medium">
               <h1 class="font-Roboto">My Cart</h1>
               <h1 class="font-Roboto">2 Items</h1>
             </div>
             <div
-              class="mt-2 h-[1px] w-[56rem] sm:w-[56rem] border-b-2 border-[#8F8F8F]"
+              class="mt-2 h-[1px] w-[56rem] xl:w-[56rem] border-b-2 border-[#8F8F8F]"
             ></div>
             <!-- -------------- HEADING --------------  -->
 
             <section
-              class="sm:mr-24 mt-6 flex justify-between font-Quicksand text-sm font-medium text-[#696969]"
+              class="xl:mr-24 mt-6 flex justify-between font-Quicksand text-sm font-medium text-[#696969]"
             >
               <h3 class="w-[27rem]">PRODUCT DETAILS</h3>
               <h3>PRICE</h3>
@@ -102,7 +102,7 @@
 
             <ul>
               <li>
-                <section class="sm:mr-24 flex justify-between font-Quicksand">
+                <section class="xl:mr-24 flex justify-between font-Quicksand">
                   <!-- -------------- PRODUCT --------------  -->
                   <div>
                     <div class="mt-10 flex w-[27rem] gap-6">
@@ -159,7 +159,7 @@
               </li>
 
               <li>
-                <section class="sm:mr-24 flex justify-between font-Quicksand">
+                <section class="xl:mr-24 flex justify-between font-Quicksand">
                   <!-- -------------- PRODUCT --------------  -->
                   <div>
                     <div class="mt-10 flex w-[27rem] gap-6">
@@ -180,7 +180,7 @@
 
                   <!-- -------------- PRICE --------------  -->
                   <div>
-                    <div class="sm:mr-[0.4rem] mt-11 text-base font-semibold">
+                    <div class="xl:mr-[0.4rem] mt-11 text-base font-semibold">
                       ₹399
                     </div>
                   </div>
@@ -189,7 +189,7 @@
                   <!-- -------------- QUANTITY --------------  -->
                   <div>
                     <div
-                      class="sm:mr-[0.3rem] mt-10 flex gap-2 text-base font-semibold"
+                      class="xl:mr-[0.3rem] mt-10 flex gap-2 text-base font-semibold"
                     >
                       <button>-</button>
                       <p
@@ -232,15 +232,17 @@
 
       <!--? ------------------- ORDER SUMMERY START -------------------- -->
       <section
-        class="flex flex-col items-center mx-7 w-[58rem] h-[32rem] sm:fixed sm:right-0 sm:min-h-screen sm:w-[21rem] bg-[#F5F5F5]"
+        class="max-sm:flex max-sm:flex-col max-sm:items-center mx-7 w-[58rem] h-[32rem] lg:fixed lg:right-0 lg:min-h-screen lg:w-[21rem] bg-[#F5F5F5] lg-mx-0 lg:mx-0"
       >
         <main
-          class="flex flex-col items-center w-[40rem] ml-6 mr-4 mt-10 sm:mt-[6.7rem]"
+          class="max-sm:flex max-sm:flex-col max-sm:items-center w-[40rem] ml-6 mr-4 max-sm:mt-10 lg:mr-0 lg:mt-[6.6rem]"
         >
           <h1 class="font-Roboto text-3xl font-medium">Order Summary</h1>
-          <div class="mt-2 h-[1px] w-[30rem] border-b-2 border-[#8F8F8F]"></div>
+          <div
+            class="mt-2 h-[1px] w-[30rem] border-b-2 border-[#8F8F8F] lg:w-[18rem]"
+          ></div>
 
-          <div class="w-[30rem] font-Quicksand">
+          <div class="w-[30rem] font-Quicksand lg:w-[18rem]">
             <div class="mt-6 flex justify-between text-base font-semibold">
               <p>ITEMS 2</p>
               <p>₹1297</p>
@@ -254,7 +256,9 @@
             <!-- -------------- PROMO CODE --------------  -->
             <div class="mt-10">
               <p class="text-base font-semibold">PROMO CODE</p>
-              <div class="flex justify-between">
+              <div
+                class="max-sm:flex max-sm:justify-between lg:flex lg:flex-col"
+              >
                 <input
                   type="text"
                   placeholder="Enter Your Code"
@@ -277,7 +281,7 @@
               <p>₹1495</p>
             </div>
 
-            <div class="flex justify-center">
+            <div class="max-sm:flex max-sm: justify-center">
               <button
                 class="mt-8 w-72 rounded-xl bg-gradient-to-r from-[#FF5BB1] to-[#FDCEDD] py-1 font-Roboto text-lg font-medium text-[#ffffff] shadow-md transition-all"
               >
