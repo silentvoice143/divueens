@@ -3449,6 +3449,10 @@ video {
   .lg\:flex-col {
     flex-direction: column;
   }
+
+  .lg\:font-medium {
+    font-weight: 500;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
