@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,22 +72,22 @@
     <div class="relative">
       <header class="">
         <nav class="navbar w-full">
-          <div class="brand h-[4rem] flex items-center relative">
+          <div class="brand relative flex h-[4rem] items-center">
             <!-- <h1 class="font-kaushan text-[3rem]">Divueens</h1> -->
             <img
               class="absolute h-full px-[2%]"
-              src="./Home/icons/Divueenlogo.png"
+              src="./divueenimg/Divueenlogo.png"
               alt=""
               srcset=""
             />
             <img
-              class="absolute h-full w-full z-[-10]"
+              class="absolute z-[-10] h-full w-full"
               src="./Home/icons/navgraphic.png"
               alt=""
             />
           </div>
           <div
-            class="navlist h-[4rem] flex items-center bg-lightpink px-[2%] justify-between"
+            class="navlist flex h-[4rem] items-center justify-between bg-lightpink px-[2%]"
           >
             <div
               class="menuicon hidden max-[1100px]:block"
@@ -100,7 +100,7 @@
               ></iconify-icon>
             </div>
             <ul
-              class="flex gap-2 max-[1000px]:gap-1 text-gray-500 hover:child:text-black child:px-2 child:py-1 max-[1100px]:hidden"
+              class="flex gap-2 text-gray-500 child:px-2 child:py-1 hover:child:text-black max-[1100px]:hidden max-[1000px]:gap-1"
             >
               <li>
                 <a class="whitespace-nowrap" href="index.html">Makeup</a>
@@ -153,7 +153,7 @@
                   height="20"
                 ></iconify-icon>
                 <input
-                  class="min-w-[200px] bg-[#f1e2e8] rounded-md h-8 w-[18vw] outline-none pl-8 pr-[4rem] text-gray-500 border-2 focus:border-navpink"
+                  class="h-8 w-[18vw] min-w-[200px] rounded-md border-2 bg-[#f1e2e8] pl-8 pr-[4rem] text-gray-500 outline-none focus:border-navpink"
                   type="text"
                   name=""
                   id=""
@@ -161,7 +161,7 @@
               </div>
               <div class="navicon">
                 <ul class="flex gap-4">
-                  <li class="relative w-[25px] h-[25px]">
+                  <li class="relative h-[25px] w-[25px]">
                     <a href=""
                       ><img
                         class="absolute h-full w-full"
@@ -170,7 +170,7 @@
                         srcset=""
                     /></a>
                   </li>
-                  <li class="relative w-[25px] h-[25px]">
+                  <li class="relative h-[25px] w-[25px]">
                     <a href=""
                       ><img
                         class="absolute h-full w-full"
@@ -179,7 +179,7 @@
                         srcset=""
                     /></a>
                   </li>
-                  <li class="relative w-[25px] h-[25px]">
+                  <li class="relative h-[25px] w-[25px]">
                     <a href=""
                       ><img
                         class="absolute h-full w-full"
@@ -199,15 +199,16 @@
       <!-- sidenav start  -->
 
       <div
-        class="sidebar hidden max-[1100px]:flex flex-col screenlist bg-lightpink w-[300px] fixed bottom-0 left-[-300px] top-[4rem] z-[200] overflow-hidden"
+        class="sidebar screenlist fixed bottom-0 left-[-300px] top-[4rem] z-[200] hidden w-[300px] flex-col overflow-hidden bg-lightpink max-[1100px]:flex"
         id="sidebar"
         style="
-          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          box-shadow:
+            rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
             rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         "
       >
         <div
-          class="close-icon absolute top-4 right-4 toggle-btn"
+          class="close-icon toggle-btn absolute right-4 top-4"
           onclick="toggleSidebar()"
         >
           <iconify-icon
@@ -225,7 +226,7 @@
           />
         </div> -->
         <ul
-          class="flex-col flex-1 gap-4 text-gray-500 hover:child:text-black child:px-4 child:py-2 hover:child:bg-[#ffdced] pt-8"
+          class="flex-1 flex-col gap-4 pt-8 text-gray-500 child:px-4 child:py-2 hover:child:bg-[#ffdced] hover:child:text-black"
         >
           <li><a class="whitespace-nowrap" href="index.html">Makeup</a></li>
           <li><a class="whitespace-nowrap" href="index.html">Skin</a></li>
@@ -248,26 +249,26 @@
 
       <!-- sidenav end -->
 
-      <div class="section-1-carosel px-[5%] py-[2rem] bg-[#fafafa] my-[5rem]">
+      <div class="section-1-carosel my-[5rem] bg-[#fafafa] px-[5%] py-[2rem]">
         <div x-data="{ activeSlide: 0 }">
           <div class="relative">
             <div x-show="activeSlide === 0" class="carousel-slide">
               <!-- Content for the first slide -->
               <div
-                class="section1-card-container grid grid-cols-3 gap-12 child:border-[0.6rem] child:border-white child:rounded-lg"
+                class="section1-card-container grid grid-cols-3 gap-12 child:rounded-lg child:border-[0.6rem] child:border-white"
               >
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -285,17 +286,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -313,17 +314,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -345,20 +346,20 @@
             <div x-show="activeSlide === 1" class="carousel-slide">
               <!-- Content for the second slide -->
               <div
-                class="section1-card-container grid grid-cols-3 gap-12 child:border-[0.6rem] child:border-white child:rounded-lg"
+                class="section1-card-container grid grid-cols-3 gap-12 child:rounded-lg child:border-[0.6rem] child:border-white"
               >
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -376,17 +377,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -404,17 +405,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -436,20 +437,20 @@
             <div x-show="activeSlide === 2" class="carousel-slide">
               <!-- Content for the third slide -->
               <div
-                class="section1-card-container grid grid-cols-3 gap-12 child:border-[0.6rem] child:border-white child:rounded-lg"
+                class="section1-card-container grid grid-cols-3 gap-12 child:rounded-lg child:border-[0.6rem] child:border-white"
               >
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -467,17 +468,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -495,17 +496,17 @@
                   </button>
                 </div>
                 <div
-                  class="section1-card h-[400px] bg-cardpink relative"
+                  class="section1-card relative h-[400px] bg-cardpink"
                   style="box-shadow: #fcaad2 0px 5px 15px"
                 >
                   <h1
-                    class="text-[1.5rem] font-volko w-[60%] absolute bottom-4 left-4"
+                    class="absolute bottom-4 left-4 w-[60%] font-volko text-[1.5rem]"
                   >
                     Upto 15% off on all Luxury Product
                   </h1>
 
                   <button
-                    class="w-[111px] h-[28px] rounded-full whitespace-nowrap absolute right-4 bottom-8 text-white text-sm font-semibold"
+                    class="absolute bottom-8 right-4 h-[28px] w-[111px] whitespace-nowrap rounded-full text-sm font-semibold text-white"
                     style="
                       background: rgb(255, 91, 177);
                       background: linear-gradient(
@@ -528,25 +529,25 @@
 
             <button
               @click="activeSlide = (activeSlide - 1 + 3) % 3"
-              class="left-[-1rem] absolute top-1/2 transform -translate-y-1/2 cursor-pointer w-[2.5rem] h-[2.5rem] rounded-full bg-white text-darkpink"
+              class="absolute left-[-1rem] top-1/2 h-[2.5rem] w-[2.5rem] -translate-y-1/2 transform cursor-pointer rounded-full bg-white text-darkpink"
             >
               <i class="fas fa-chevron-left text-2xl"></i>
             </button>
             <button
               @click="activeSlide = (activeSlide + 1) % 3"
-              class="right-[-1rem] absolute top-1/2 transform -translate-y-1/2 cursor-pointer w-[2.5rem] h-[2.5rem] rounded-full bg-white text-darkpink"
+              class="absolute right-[-1rem] top-1/2 h-[2.5rem] w-[2.5rem] -translate-y-1/2 transform cursor-pointer rounded-full bg-white text-darkpink"
             >
               <i class="fas fa-chevron-right text-2xl"></i>
             </button>
             <!-- Dot indicators -->
             <div
-              class="absolute bottom-[-3rem] left-1/2 transform -translate-x-1/2 flex space-x-2"
+              class="absolute bottom-[-3rem] left-1/2 flex -translate-x-1/2 transform space-x-2"
             >
               <template x-for="(slide, index) in [0, 1, 2]" :key="index">
                 <button
                   @click="activeSlide = index"
                   :class="{ 'bg-darkpink': activeSlide === index, 'bg-gray-300': activeSlide !== index }"
-                  class="w-3 h-3 rounded-full"
+                  class="h-3 w-3 rounded-full"
                 ></button>
               </template>
             </div>
@@ -556,7 +557,7 @@
 
       <!-- top brand section  -->
       <div
-        class="top-brand-container px-[5%] py-[4rem] bg-[#fafafa] mt-8"
+        class="top-brand-container mt-8 bg-[#fafafa] px-[5%] py-[4rem]"
         style="
           background: rgb(254, 242, 255);
           background: linear-gradient(
@@ -570,119 +571,119 @@
           );
         "
       >
-        <h1 class="text-4xl my-8">Top Brand</h1>
+        <h1 class="my-8 text-4xl">Top Brand</h1>
         <div
-          class="top-brand-cards-container grid grid-cols-3 max-[1125px]:grid-cols-2 max-[730px]:grid-cols-1 gap-8"
+          class="top-brand-cards-container grid grid-cols-3 gap-8 max-[1125px]:grid-cols-2 max-[730px]:grid-cols-1"
         >
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Mask group-1.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
             </div>
           </div>
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Mask group-2.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
             </div>
           </div>
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Mask group-3.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
             </div>
           </div>
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Mask group.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
             </div>
           </div>
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Rectangle 49-1.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
             </div>
           </div>
-          <div class="brand-card relative h-[300px] rounded-md overflow-hidden">
-            <div class="bcard-img h-[80%] relative">
+          <div class="brand-card relative h-[300px] overflow-hidden rounded-md">
+            <div class="bcard-img relative h-[80%]">
               <img
-                class="absolute w-full h-full"
+                class="absolute h-full w-full"
                 src="./Home/topbrandimgs/Rectangle 49.png"
                 alt=""
                 srcset=""
               />
             </div>
             <div class="bcard-content bg-white px-4 py-2">
-              <h1 class="brand-name font-bold text-sm">Minimalist</h1>
+              <h1 class="brand-name text-sm font-bold">Minimalist</h1>
               <p class="text-[0.7rem]">Up to 30% off on Minimalist products</p>
               <button
-                class="bg-darkpink text-white text-sm py-1 px-3 rounded-full absolute bottom-4 right-4"
+                class="absolute bottom-4 right-4 rounded-full bg-darkpink px-3 py-1 text-sm text-white"
               >
                 Shop now
               </button>
@@ -693,10 +694,10 @@
 
       <!-- infinite text scroll  -->
 
-      <div class="relative w-full px-16 py-1 overflow-hidden bg-[#8098cc]">
+      <div class="relative w-full overflow-hidden bg-[#8098cc] px-16 py-1">
         <div class="whitespace-nowrap">
-          <div class="flex gap-8 animate-marquee-infinite">
-            <div class="flex gap-8 text-white font-bold">
+          <div class="flex animate-marquee-infinite gap-8">
+            <div class="flex gap-8 font-bold text-white">
               <p class="text-[#3636a3]">SALE IS LIVE</p>
               <p>FREE SHIPPIING ON ORDER ABOVE RS299</p>
               <p class="text-[#3636a3]">SALE IS LIVE</p>
@@ -704,7 +705,7 @@
               <p class="text-[#3636a3]">SALE IS LIVE</p>
               <p>FREE SHIPPIING ON ORDER ABOVE RS299</p>
             </div>
-            <div class="flex gap-8 text-white font-bold">
+            <div class="flex gap-8 font-bold text-white">
               <p class="text-[#3636a3]">SALE IS LIVE</p>
               <p>FREE SHIPPIING ON ORDER ABOVE RS299</p>
               <p class="text-[#3636a3]">SALE IS LIVE</p>
@@ -718,7 +719,7 @@
 
       <!-- category section  -->
       <div
-        class="category-section px-[5%] py-[4rem] bg-[#fafafa] pt-8"
+        class="category-section bg-[#fafafa] px-[5%] py-[4rem] pt-8"
         style="
           background: rgb(254, 242, 255);
           background: linear-gradient(
@@ -732,56 +733,56 @@
           );
         "
       >
-        <h1 class="text-4xl my-8">Multiple Categories Of Brands</h1>
+        <h1 class="my-8 text-4xl">Multiple Categories Of Brands</h1>
         <div
-          class="category-img-box h-[450px] w-full bg-purple-200 rounded-lg mb-12 relative"
+          class="category-img-box relative mb-12 h-[450px] w-full rounded-lg bg-purple-200"
         >
           <img
-            class="w-full h-full absolute"
+            class="absolute h-full w-full"
             src="./Home/caategoryimg/Frame 300.png"
             alt=""
           />
         </div>
         <div
-          class="category-circle-box grid grid-cols-8 max-[1410px]:grid-cols-4 max-[736px]:grid-cols-2 gap-y-8 justify-between child:m-auto"
+          class="category-circle-box grid grid-cols-8 justify-between gap-y-8 child:m-auto max-[1410px]:grid-cols-4 max-[736px]:grid-cols-2"
         >
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 100.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 101.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 102.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 105.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 106.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 106.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 107.png" alt="" />
           </div>
           <div
-            class="w-[150px] h-[150px] rounded-full relative overflow-hidden"
+            class="relative h-[150px] w-[150px] overflow-hidden rounded-full"
           >
             <img src="./Home/caategoryimg/Group 98.png" alt="" />
           </div>
@@ -791,15 +792,15 @@
       <!-- hotlist section  -->
 
       <div class="hotlist-section">
-        <div class="hotlist px-[5%] py-[4rem] bg-[#fafafa] mt-8">
-          <h1 class="text-4xl my-8">Hot List</h1>
+        <div class="hotlist mt-8 bg-[#fafafa] px-[5%] py-[4rem]">
+          <h1 class="my-8 text-4xl">Hot List</h1>
           <div class="hotlist-products-container box-border">
             <div>
               <div
-                class="hotlistproductsline1 flex flex-nowrap gap-8 w-full mt-12 overflow-x-auto"
+                class="hotlistproductsline1 mt-12 flex w-full flex-nowrap gap-8 overflow-x-auto"
               >
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -816,7 +817,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -833,7 +834,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -850,7 +851,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -867,7 +868,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -884,7 +885,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -901,7 +902,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -918,7 +919,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -940,10 +941,10 @@
             <!-- productline2 -->
             <div>
               <div
-                class="hotlistproductsline2 flex flex-nowrap gap-8 w-full mt-12 overflow-x-auto"
+                class="hotlistproductsline2 mt-12 flex w-full flex-nowrap gap-8 overflow-x-auto"
               >
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -960,7 +961,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -977,7 +978,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -994,7 +995,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -1011,7 +1012,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -1028,7 +1029,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -1045,7 +1046,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -1062,7 +1063,7 @@
                   </div>
                 </div>
                 <div
-                  class="hotlistproduct w-[185.76px] h-[329.68px] border-[1px] border-gray-400 p-2 rounded-2xl relative flex-none"
+                  class="hotlistproduct relative h-[329.68px] w-[185.76px] flex-none rounded-2xl border-[1px] border-gray-400 p-2"
                 >
                   <img
                     class="h-[69%]"
@@ -1087,69 +1088,69 @@
       <!-- brands of the day /// -->
 
       <div class="relative">
-        <div class="section-1-carosel px-[5%] py-[2rem] bg-[#fafafa] my-8">
-          <h1 class="text-4xl my-8">Brands of the day</h1>
+        <div class="section-1-carosel my-8 bg-[#fafafa] px-[5%] py-[2rem]">
+          <h1 class="my-8 text-4xl">Brands of the day</h1>
           <div x-data="{ activeSlide: 0 }">
             <div class="relative text-white">
               <div x-show="activeSlide === 0" class="carousel-slide">
                 <!-- Content for the first slide -->
                 <div
-                  class="section1-card-container grid grid-cols-3 gap-8 child:rounded-2xl child:overflow-hidden"
+                  class="section1-card-container grid grid-cols-3 gap-8 child:overflow-hidden child:rounded-2xl"
                 >
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/daybrandimg/Rectangle 49.png"
                       alt=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/daybrandimg/Rectangle 59-1.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Upto 15% off on all Lipsticks
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/daybrandimg/Rectangle 59.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         The new EDP Burberry Goddess!
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
@@ -1160,62 +1161,62 @@
               <div x-show="activeSlide === 1" class="carousel-slide">
                 <!-- Content for the second slide -->
                 <div
-                  class="section1-card-container grid grid-cols-3 gap-8 child:rounded-2xl child:overflow-hidden"
+                  class="section1-card-container grid grid-cols-3 gap-8 child:overflow-hidden child:rounded-2xl"
                 >
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
@@ -1226,62 +1227,62 @@
               <div x-show="activeSlide === 2" class="carousel-slide">
                 <!-- Content for the third slide -->
                 <div
-                  class="section1-card-container grid grid-cols-3 gap-8 child:rounded-2xl child:overflow-hidden"
+                  class="section1-card-container grid grid-cols-3 gap-8 child:overflow-hidden child:rounded-2xl"
                 >
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Minimalist
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
                     </div>
                   </div>
-                  <div class="relative section1-card h-[400px]">
+                  <div class="section1-card relative h-[400px]">
                     <img
-                      class="absolute w-full h-full"
+                      class="absolute h-full w-full"
                       src="./Home/images/dhoni.png"
                       alt=""
                       srcset=""
                     />
                     <div class="absolute bottom-6 left-6">
                       <h1
-                        class="text-[2rem] font-[volko] font-bold w-[70%] mb-4"
+                        class="mb-4 w-[70%] font-[volko] text-[2rem] font-bold"
                       >
                         Sauvage Wild at Heart
                       </h1>
                       <button
-                        class="bg-white rounded-full w-[100px] h-[36px] align-middle font-semibold text-sm text-darkpink"
+                        class="h-[36px] w-[100px] rounded-full bg-white align-middle text-sm font-semibold text-darkpink"
                       >
                         Shop Now
                       </button>
@@ -1293,13 +1294,13 @@
 
               <button
                 @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                class="left-[-1rem] absolute top-1/2 transform -translate-y-1/2 cursor-pointer w-[2.5rem] h-[2.5rem] rounded-full bg-white text-darkpink"
+                class="absolute left-[-1rem] top-1/2 h-[2.5rem] w-[2.5rem] -translate-y-1/2 transform cursor-pointer rounded-full bg-white text-darkpink"
               >
                 <i class="fas fa-chevron-left text-2xl"></i>
               </button>
               <button
                 @click="activeSlide = (activeSlide + 1) % 3"
-                class="right-[-1rem] absolute top-1/2 transform -translate-y-1/2 cursor-pointer w-[2.5rem] h-[2.5rem] rounded-full bg-white text-darkpink"
+                class="absolute right-[-1rem] top-1/2 h-[2.5rem] w-[2.5rem] -translate-y-1/2 transform cursor-pointer rounded-full bg-white text-darkpink"
               >
                 <i class="fas fa-chevron-right text-2xl"></i>
               </button>
@@ -1321,155 +1322,192 @@
           <!-- policy contiainer  -->
           <!-- grid grid-cols-1 justify-center md:justify-normal md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 -->
 
-            <div
-              class="policy-container grid grid-cols-5 mt-[6rem] mb-[5rem] px-8 gap-2"
-            >
-              <div class="policy-item flex justify-center items-center">
-                <div>
-                  <div
-                    class="policy-icon overflow-hidden w-[95px] h-[95px] border-[5px] border-pink-500 rounded-[50%] flex justify-center items-center"
-                  >
-                    <img
-                      src="./Home/policy-icons/return.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-                <div class="policy-content pl-4">
-                  <h1 class="font-bold">Easy Return</h1>
-                  <p class="text-sm">Easy return & refund policies</p>
+          <div
+            class="policy-container mb-[5rem] mt-[6rem] grid auto-cols-max grid-flow-col gap-8 px-8"
+          >
+            <div class="policy-item flex items-center text-left">
+              <div
+                class="policy-icon flex h-[95px] w-[95px] items-center justify-center rounded-[50%] border-[5px] border-pink-500"
+              >
+                <img
+                  class=""
+                  src="./Home/policy-icons/return.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+
+              <div class="policy-content pl-4">
+                <h1 class="font-bold">Easy Return</h1>
+                <p class="text-sm">Easy return <br />& refund policies</p>
+              </div>
+            </div>
+            <div class="policy-item flex items-center text-left">
+              <div>
+                <div
+                  class="policy-icon flex h-[95px] w-[95px] items-center justify-center overflow-hidden rounded-[50%] border-[5px] border-pink-500"
+                >
+                  <img src="./Home/policy-icons/member.png" alt="" srcset="" />
                 </div>
               </div>
-              <div class="policy-item flex justify-center items-center">
-                <div>
-                  <div
-                    class="policy-icon overflow-hidden w-[95px] h-[95px] border-[5px] border-pink-500 rounded-[50%] flex justify-center items-center"
-                  >
-                    <img
-                      src="./Home/policy-icons/member.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-                <div class="policy-content pl-4">
-                  <h1 class="font-bold">Membership</h1>
-                  <p class="text-sm">Membership and Loyalty Programs</p>
+              <div class="policy-content pl-4">
+                <h1 class="font-bold">Membership</h1>
+                <p class="text-sm">
+                  Membership and <br />
+                  Loyalty Programs
+                </p>
+              </div>
+            </div>
+            <div class="policy-item flex items-center text-left">
+              <div>
+                <div
+                  class="policy-icon flex h-[95px] w-[95px] items-center justify-center overflow-hidden rounded-[50%] border-[5px] border-pink-500"
+                >
+                  <img src="./Home/policy-icons/reward.png" alt="" srcset="" />
                 </div>
               </div>
-              <div class="policy-item flex justify-center items-center">
-                <div>
-                  <div
-                    class="policy-icon overflow-hidden w-[95px] h-[95px] border-[5px] border-pink-500 rounded-[50%] flex justify-center items-center"
-                  >
-                    <img
-                      src="./Home/policy-icons/reward.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-                <div class="policy-content pl-4">
-                  <h1 class="font-bold">Cashback</h1>
-                  <p class="text-sm">Get amazing rewards and cashback</p>
+              <div class="policy-content pl-4">
+                <h1 class="font-bold">Cashback</h1>
+                <p class="text-sm">Get amazing <br />rewards and cashback</p>
+              </div>
+            </div>
+            <div class="policy-item flex items-center text-left">
+              <div>
+                <div
+                  class="policy-icon flex h-[95px] w-[95px] items-center justify-center overflow-hidden rounded-[50%] border-[5px] border-pink-500"
+                >
+                  <img
+                    src="./Home/policy-icons/delivery.png"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
               </div>
-              <div class="policy-item flex justify-center items-center">
-                <div>
-                  <div
-                    class="policy-icon overflow-hidden w-[95px] h-[95px] border-[5px] border-pink-500 rounded-[50%] flex justify-center items-center"
-                  >
-                    <img
-                      src="./Home/policy-icons/delivery.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-                <div class="policy-content pl-4">
-                  <h1 class="font-bold">Fast Delivery</h1>
-                  <p class="text-sm">Delivery within 3 <br />days</p>
+              <div class="policy-content pl-4">
+                <h1 class="font-bold">Fast Delivery</h1>
+                <p class="text-sm">Delivery within 3 <br />days</p>
+              </div>
+            </div>
+            <div class="policy-item flex items-center text-left">
+              <div>
+                <div
+                  class="policy-icon flex h-[95px] w-[95px] items-center justify-center overflow-hidden rounded-[50%] border-[5px] border-pink-500"
+                >
+                  <img
+                    src="./Home/policy-icons/customersupport.png"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
               </div>
-              <div class="policy-item flex justify-center items-center">
-                <div>
-                  <div
-                    class="policy-icon overflow-hidden w-[95px] h-[95px] border-[5px] border-pink-500 rounded-[50%] flex justify-center items-center"
-                  >
-                    <img
-                      src="./Home/policy-icons/customersupport.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-                <div class="policy-content pl-4">
-                  <h1 class="font-bold">Customer Support</h1>
-                  <p class="text-sm">Chat support for real-time assistance</p>
-                </div>
+              <div class="policy-content pl-4">
+                <h1 class="font-bold">Customer Support</h1>
+                <p class="text-sm">
+                  Chat support for <br />
+                  real-time assistance
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <footer class="bg-cardpink">
-          <div class="footer px-[5%] py-[4rem] pt-8 font-quicksand">
-            <div class="footer-grid-box grid grid-cols-5 child:mx-auto">
-              <div class="first">
-                <img
-                  src="./Home/icons/Divueenlogo.png"
-                  class="w-[108px]"
-                  alt=""
-                />
-                <ul class="text-[1rem] my-4 child:my-2 hover:child:underline">
-                  <li class=""><a href="">About Us</a></li>
-                  <li><a href="">Career</a></li>
-                  <li><a href="">Privacy Policy</a></li>
-                  <li><a href="">Terms & Conditions</a></li>
-                  <li><a href="">Authenticity</a></li>
-                </ul>
-              </div>
-              <div class="second">
-                <h1 class="text-2xl font-semibold">Categories</h1>
-                <ul class="text-[1rem] my-4 child:my-2 hover:child:underline">
-                  <li class=""><a href="">Makeup</a></li>
-                  <li><a href="">Skincare</a></li>
-                  <li><a href="">Hair Appliances</a></li>
-                  <li><a href="">Bath & Body</a></li>
-                  <li><a href="">Health & Wellness</a></li>
-                  <li><a href="">Mom & Baby</a></li>
-                </ul>
-              </div>
-              <div class="third">
-                <h1 class="text-2xl font-semibold">Direct Link</h1>
-                <ul class="text-[1rem] my-4 child:my-2 hover:child:underline">
-                  <li class=""><a href="">New Launch</a></li>
-                  <li><a href="">Discounts</a></li>
-                  <li><a href="">Offers</a></li>
-                  <li><a href="">Bestseller</a></li>
-                  <li><a href="">Sale</a></li>
-                </ul>
-              </div>
-              <div class="fourth">
-                <h1 class="text-2xl font-semibold">Contact Us</h1>
-                <ul class="text-[1rem] my-4 child:my-2 hover:child:underline">
-                  <li class=""><a href="">Address-</a></li>
-                  <li><a href="">Mail-</a></li>
-                  <li><a href="">Phone No-</a></li>
-                </ul>
-              </div>
-              <div class="fifth">
-                <h1 class="text-2xl font-semibold">Socials</h1>
-                <ul class="text-[1rem] my-4 child:my-2">
-                  <li class=""><a href="">About Us</a></li>
-                  <li><a href="">Career</a></li>
-                  <li><a href="">Privacy Policy</a></li>
-                </ul>
-              </div>
+      </div>
+      <footer class="bg-cardpink">
+        <div class="footer px-[10%] py-[4rem] pt-8 font-quicksand">
+          <div
+            class="footer-grid-box ml-[6%] grid grid-cols-5 gap-12 child:w-[150px] max-[960px]:grid-cols-3 max-[680px]:grid-cols-1"
+          >
+            <div class="first">
+              <img
+                src="./divueenimg/Divueenlogo.png"
+                class="w-[108px]"
+                alt=""
+              />
+              <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+                <li class=""><a href="">About Us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Authenticity</a></li>
+              </ul>
+            </div>
+            <div class="second">
+              <h1 class="text-2xl font-semibold">Categories</h1>
+              <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+                <li class=""><a href="">Makeup</a></li>
+                <li><a href="">Skincare</a></li>
+                <li><a href="">Hair Appliances</a></li>
+                <li><a href="">Bath & Body</a></li>
+                <li><a href="">Health & Wellness</a></li>
+                <li><a href="">Mom & Baby</a></li>
+              </ul>
+            </div>
+            <div class="third">
+              <h1 class="text-2xl font-semibold">Direct Link</h1>
+              <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+                <li class=""><a href="">New Launch</a></li>
+                <li><a href="">Discounts</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Bestseller</a></li>
+                <li><a href="">Sale</a></li>
+              </ul>
+            </div>
+            <div class="fourth">
+              <h1 class="text-2xl font-semibold">Contact Us</h1>
+              <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+                <li class=""><a href="">Address-</a></li>
+                <li><a href="">Mail-</a></li>
+                <li><a href="">Phone No-</a></li>
+              </ul>
+            </div>
+            <div class="fifth">
+              <h1 class="text-2xl font-semibold">Socials</h1>
+              <ul class="my-4 text-[1rem] child:my-2">
+                <li class=""><a href="">About Us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
+
+    <!-- script  -->
+
+    <script>
+      var sidebar = document.getElementById("sidebar");
+      var navopen = false;
+      function toggleSidebar() {
+        // var sidebar = document.getElementById("sidebar");
+        // console.log(sidebar.style.left);
+        sidebar.style.left =
+          sidebar.style.left === "-300px" || sidebar.style.left === ""
+            ? "0"
+            : "-300px";
+        // navopen =
+        //   sidebar.style.left === "-300px" || sidebar.style.left === ""
+        //     ? false
+        //     : true;
+        document.body.style.overflow =
+          sidebar.style.left === "-300px" ? "auto" : "hidden";
+      }
+
+      addEventListener("resize", (event) => {});
+
+      onresize = (event) => {
+        // console.log(screen.width);
+        if (screen.width > "1100") {
+          sidebar.style.display = "none";
+          if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+          }
+          document.body.style.overflow = "auto";
+        }
+
+        if (screen.width <= "1100") {
+          sidebar.style.display = "flex";
+        }
+      };
+    </script>
   </body>
 </html>
