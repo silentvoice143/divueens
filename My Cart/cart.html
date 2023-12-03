@@ -65,10 +65,9 @@
     <title>Cart</title>
   </head>
   <body>
-    <section class="mx-7 flex flex-col lg:flex-row">
+    <section class="mx-7 flex w-full flex-col lg:flex-row lg:gap-16">
       <!--?-------------------- LEFT SIDE START -------------------- -->
-
-      <div class="min-h-screen w-[58rem] bg-[#ffffff] lg:w-[60rem]">
+      <div class="w-[58rem] bg-[#ffffff] lg:w-[70.5rem]">
         <!-- -------------- LOGO --------------  -->
         <header class="ml-4 mt-5">
           <img
@@ -83,20 +82,20 @@
           <div>
             <!-- -------------- HEADING --------------  -->
             <div
-              class="flex justify-between text-7xl max-sm:font-medium sm:text-6xl sm:font-semibold lg:text-3xl"
+              class="flex justify-between text-7xl max-sm:font-medium sm:text-6xl sm:font-semibold lg:w-[100%] lg:text-3xl"
             >
               <h1 class="font-Roboto">My Cart</h1>
               <h1 class="font-Roboto">2 Items</h1>
             </div>
             <div
-              class="h-[1px] border-b-2 border-[#8F8F8F] max-lg:w-[56rem] max-sm:mt-4 sm:mt-3 lg:w-[57rem]"
+              class="h-[1px] border-b-2 border-[#8F8F8F] max-lg:w-[56rem] max-sm:mt-4 sm:mt-3 lg:mt-1 lg:w-[100%]"
             ></div>
             <!-- -------------- HEADING --------------  -->
 
             <section
               class="font-Quicksand flex justify-between font-semibold text-[#696969] max-sm:mt-6 max-sm:text-3xl sm:mt-6 sm:text-2xl lg:text-xl lg:font-medium"
             >
-              <h3 class="w-[25rem] lg:w-[27.5rem]">PRODUCT DETAILS</h3>
+              <h3 class="w-[25rem] lg:w-[21rem]">PRODUCT DETAILS</h3>
               <h3>PRICE</h3>
               <h3>QUANTITY</h3>
               <h3>TOTAL</h3>
@@ -125,7 +124,7 @@
                         class="max-lg:flex max-lg:items-center max-lg:justify-between"
                       >
                         <h3
-                          class="font-semibold max-sm:w-[25rem] max-sm:text-4xl sm:text-3xl lg:mb-4 lg:w-60 lg:text-base"
+                          class="font-semibold max-sm:w-[25rem] max-sm:text-4xl sm:text-3xl lg:mb-4 lg:w-40 lg:text-base"
                         >
                           Lakme Absolute Blur Perfect Makeup Primer
                         </h3>
@@ -176,34 +175,39 @@
                   <!-- -------------- TOTAL ----------------  -->
                 </section>
                 <div
-                  class="mt-4 h-[1px] w-[56rem] border-b-[0.81px] border-[#DEDEDE]"
+                  class="mt-4 h-[1px] border-b-[0.81px] border-[#DEDEDE] max-lg:w-[56rem] lg:w-[100%]"
                 ></div>
               </li>
+
               <li>
-                <section class="font-Quicksand flex justify-between xl:mr-24">
+                <section class="font-Quicksand flex justify-between">
                   <!-- -------------- PRODUCT --------------  -->
                   <div>
-                    <div class="mt-10 flex w-[25rem] flex-col gap-6">
-                      <div class="flex">
+                    <div
+                      class="lg:w-27[rem] mt-10 flex gap-6 max-lg:w-[25rem] max-lg:flex-col"
+                    >
+                      <div class="max-lg:flex">
                         <img
                           src="./img/1-jpg.jpg"
                           alt="product.img"
-                          class="max-sm:h-80 max-sm:w-80 sm:h-60 sm:w-60"
+                          class="max-sm:h-80 max-sm:w-80 sm:h-60 sm:w-60 lg:h-44 lg:w-36"
                         />
                         <span
-                          class="text-2xl font-medium max-sm:ml-6 max-sm:mt-[17.5rem] sm:ml-16 sm:mt-[12.8rem] lg:text-sm lg:font-normal"
+                          class="text-2xl font-medium max-sm:ml-6 max-sm:mt-[17.5rem] sm:ml-16 sm:mt-[12.8rem] lg:hidden lg:text-sm lg:font-normal"
                           >80ml</span
                         >
                       </div>
-                      <div class="flex items-center justify-between">
+                      <div
+                        class="max-lg:flex max-lg:items-center max-lg:justify-between"
+                      >
                         <h3
-                          class="font-semibold max-sm:mb-4 max-sm:w-[25rem] max-sm:text-4xl sm:text-3xl lg:w-72 lg:text-base lg:font-semibold"
+                          class="font-semibold max-sm:w-[25rem] max-sm:text-4xl sm:text-3xl lg:mb-4 lg:w-40 lg:text-base"
                         >
                           Lakme Absolute Blur Perfect Makeup Primer
                         </h3>
 
                         <span
-                          class="hidden text-xl font-medium lg:text-sm lg:font-normal"
+                          class="hidden text-xl font-medium lg:block lg:text-sm lg:font-normal"
                           >80ml</span
                         >
                       </div>
@@ -214,7 +218,7 @@
                   <!-- -------------- PRICE -----------------  -->
                   <div>
                     <div
-                      class="mr-3 mt-11 text-4xl font-semibold max-sm:pt-40 sm:pt-28 sm:text-3xl lg:text-base lg:font-semibold"
+                      class="mr-3 mt-11 text-4xl font-semibold max-sm:pt-40 sm:pt-28 sm:text-3xl lg:pt-0 lg:text-base lg:font-semibold"
                     >
                       ₹499
                     </div>
@@ -224,7 +228,7 @@
                   <!-- ------------ QUANTITY -------------  -->
                   <div>
                     <div
-                      class="mr-8 mt-10 flex gap-4 text-4xl font-semibold max-sm:pt-40 sm:mr-[0.4rem] sm:gap-2 sm:pt-28 sm:text-3xl lg:text-base lg:font-semibold"
+                      class="mr-8 mt-10 flex gap-4 text-4xl font-semibold max-sm:pt-40 sm:mr-[0.4rem] sm:gap-2 sm:pt-28 sm:text-3xl lg:pt-0 lg:text-base lg:font-semibold"
                     >
                       <button>-</button>
                       <p
@@ -240,7 +244,7 @@
                   <!-- -------------- TOTAL -----------------  -->
                   <div>
                     <p
-                      class="mt-[2.7rem] text-4xl font-semibold max-sm:mr-[0.3rem] max-sm:pt-40 sm:mr-[0] sm:pt-28 sm:text-3xl lg:text-base lg:font-semibold"
+                      class="mt-[2.7rem] text-4xl font-semibold max-sm:mr-[0.3rem] max-sm:pt-40 sm:mr-[0] sm:pt-28 sm:text-3xl lg:mr-3 lg:pt-0 lg:text-base lg:font-semibold"
                     >
                       ₹499
                     </p>
@@ -248,13 +252,13 @@
                   <!-- -------------- TOTAL ----------------  -->
                 </section>
                 <div
-                  class="mt-4 h-[1px] w-[56rem] border-b-[0.81px] border-[#DEDEDE]"
+                  class="mt-4 h-[1px] border-b-[0.81px] border-[#DEDEDE] max-lg:w-[56rem] lg:w-[100%]"
                 ></div>
               </li>
             </ul>
 
             <button
-              class="my-32 bg-gradient-to-r from-[#FE68B6] to-[#FDB3D2] bg-clip-text text-5xl font-bold text-transparent sm:text-4xl sm:font-semibold"
+              class="my-32 bg-gradient-to-r from-[#FE68B6] to-[#FDB3D2] bg-clip-text text-5xl font-bold text-transparent sm:text-4xl sm:font-semibold lg:my-14 lg:text-xl"
             >
               <div class="flex items-center">
                 <span class="material-symbols-outlined">
@@ -265,14 +269,15 @@
           </div>
         </div>
       </div>
+
       <!--? ------------------- LEFT SIDE END -------------------- -->
 
       <!--? ------------------- ORDER SUMMERY START -------------------- -->
       <section
-        class="h-[46rem] w-[58rem] bg-[#F5F5F5] max-lg:mx-7 max-lg:flex max-lg:flex-col max-lg:items-center lg:fixed lg:right-0 lg:min-h-screen lg:w-[18rem]"
+        class="h-[44rem] w-[58rem] bg-[#F5F5F5] max-lg:mx-7 max-lg:flex max-lg:flex-col max-lg:items-center sm:h-[45rem] lg:sticky lg:right-0 lg:h-auto lg:w-80"
       >
         <main
-          class="ml-6 mr-4 max-lg:mt-14 max-lg:flex max-lg:w-[40rem] max-lg:flex-col max-lg:items-center max-sm:mt-10 lg:mt-[7.5rem]"
+          class="ml-6 mr-4 max-lg:mt-14 max-lg:flex max-lg:w-[40rem] max-lg:flex-col max-lg:items-center max-sm:mt-10 lg:mt-[7.2rem]"
         >
           <h1
             class="font-Roboto text-7xl max-lg:font-medium sm:text-6xl lg:text-3xl lg:font-semibold"
@@ -280,7 +285,7 @@
             Order Summary
           </h1>
           <div
-            class="h-[1px] w-[34rem] border-b-2 border-[#8F8F8F] max-lg:mt-4 lg:mt-2 lg:w-[15rem]"
+            class="h-[1px] w-[34rem] border-b-2 border-[#8F8F8F] max-lg:mt-4 lg:mt-1 lg:w-[15rem]"
           ></div>
 
           <div
@@ -313,7 +318,7 @@
               </div>
             </div>
             <div
-              class="mt-12 h-[0.81px] border-b-2 border-[#CCCCCC] lg:w-72"
+              class="mt-12 h-[0.81px] border-b-2 border-[#CCCCCC] lg:w-[100%]"
             ></div>
             <!-- -------------- PROMO CODE --------------  -->
 
@@ -336,7 +341,9 @@
     </section>
 
     <!--? ------------------- FOOTER START -------------------- -->
-    <footer class="mt-10 w-[64.5rem] bg-cardpink">
+    <footer
+      class="max-lg:mt-10lg:mr-0 w-[64.5rem] bg-cardpink lg:mt-0 lg:w-[100%]"
+    >
       <div class="footer px-[5%] py-[4rem] pt-8 font-quicksand">
         <div class="footer-grid-box grid grid-cols-5 child:mx-auto">
           <div class="first">
