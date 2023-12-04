@@ -31,21 +31,22 @@
     <link rel="stylesheet" href="./style.css" />
 
     <title>Cart</title>
+    <!-- add this style in head  -->
+    <style>
+      .sidebar {
+        overflow-y: auto;
+        transition: 0.3s;
+      }
+    </style>
   </head>
-  <body class="max-lg:absolute">
+  <body class="">
     <section class="flex flex-col lg:ml-7 lg:flex-row lg:gap-8">
       <!--?-------------------- LEFT SIDE START -------------------- -->
       <div
         class="w-[52rem] bg-[#ffffff] md:w-[62rem] lg:w-[70.5rem] 2xl:w-[80rem]"
       >
         <!-- -------------- LOGO --------------  -->
-        <header class="ml-5 mt-5">
-          <img
-            src="../divueenimg/Divueenlogo.png"
-            alt="divueeni img"
-            class="h-28 w-36 lg:h-12 lg:w-20"
-          />
-        </header>
+
         <!-- -------------- LOGO --------------  -->
 
         <div class="mx-10 mt-12">
@@ -371,5 +372,41 @@
     <!--? ------------------- FOOTER START -------------------- -->
 
     <!-- script  -->
+
+    <script>
+      var sidebar = document.getElementById("sidebar");
+      var navopen = false;
+      function toggleSidebar() {
+        // var sidebar = document.getElementById("sidebar");
+        // console.log(sidebar.style.left);
+        sidebar.style.left =
+          sidebar.style.left === "-300px" || sidebar.style.left === ""
+            ? "0"
+            : "-300px";
+        // navopen =
+        //   sidebar.style.left === "-300px" || sidebar.style.left === ""
+        //     ? false
+        //     : true;
+        document.body.style.overflow =
+          sidebar.style.left === "-300px" ? "auto" : "hidden";
+      }
+
+      addEventListener("resize", (event) => {});
+
+      onresize = (event) => {
+        // console.log(screen.width);
+        if (screen.width > "1100") {
+          sidebar.style.display = "none";
+          if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+          }
+          document.body.style.overflow = "auto";
+        }
+
+        if (screen.width <= "1100") {
+          sidebar.style.display = "flex";
+        }
+      };
+    </script>
   </body>
 </html>
