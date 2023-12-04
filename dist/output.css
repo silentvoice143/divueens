@@ -1185,9 +1185,11 @@ video {
   width: 100%;
 }
 
+
 .w-\[52rem\] {
   width: 52rem;
 }
+
 
 .min-w-\[200px\] {
   min-width: 200px;
@@ -3819,6 +3821,7 @@ video {
     flex-direction: column;
   }
 
+
   .lg\:gap-12 {
     gap: 3rem;
   }
@@ -3829,6 +3832,10 @@ video {
 
   .lg\:gap-8 {
     gap: 2rem;
+
+  .lg\:gap-16 {
+    gap: 4rem;
+
   }
 
   .lg\:py-1 {
