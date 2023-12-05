@@ -663,10 +663,6 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .left-1 {
   left: 0.25rem;
 }
@@ -832,11 +828,6 @@ video {
 .my-\[5rem\] {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.my-\[6rem\] {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 .mb-12 {
