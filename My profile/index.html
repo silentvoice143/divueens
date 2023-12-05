@@ -11,14 +11,201 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <style>
       .checked {
         color: orange;
+      }
+
+      .sidebar {
+        overflow-y: auto;
+        transition: 0.3s;
       }
     </style>
   </head>
 
   <body class="bg-neutral-100">
+    <!-- Header  -->
+
+    <div class="relative">
+      <header class="">
+        <nav class="navbar w-full">
+          <div class="brand relative flex h-[4rem] items-center">
+            <!-- <h1 class="font-kaushan text-[3rem]">Divueens</h1> -->
+            <img
+              class="absolute h-full px-[2%]"
+              src="../divueenimg/Divueenlogo.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="absolute z-[-10] h-full w-full"
+              src="../Home/icons/navgraphic.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="navlist flex h-[4rem] items-center justify-between bg-lightpink px-[2%]"
+          >
+            <div
+              class="menuicon hidden max-[1100px]:block"
+              onclick="toggleSidebar()"
+            >
+              <iconify-icon
+                icon="ion:menu"
+                width="28"
+                height="28"
+              ></iconify-icon>
+            </div>
+            <ul
+              class="flex gap-2 text-gray-500 child:px-2 child:py-1 hover:child:text-black max-[1100px]:hidden max-[1000px]:gap-1"
+            >
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Makeup</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Skin</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Hair Care</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Bath & Body</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html"
+                  >Health & Wellness</a
+                >
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Mom & Baby</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Men</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Sale</a>
+              </li>
+            </ul>
+            <div class="flex gap-[3vw]">
+              <div class="relative box-border">
+                <iconify-icon
+                  class="absolute left-1 top-1"
+                  icon="tabler:search"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <iconify-icon
+                  class="absolute right-8 top-1"
+                  icon="mdi:camera-outline"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <iconify-icon
+                  class="absolute right-1 top-1"
+                  icon="material-symbols:mic-outline"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <input
+                  class="h-8 w-[18vw] min-w-[200px] rounded-md border-2 bg-[#f1e2e8] pl-8 pr-[4rem] text-gray-500 outline-none focus:border-navpink"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="navicon">
+                <ul class="flex gap-4">
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/bag.png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/heart.png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/user (1).png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end header -->
+
+      <!-- sidenav start  -->
+
+      <div
+        class="sidebar screenlist fixed bottom-0 left-[-300px] top-[4rem] z-[200] hidden w-[300px] flex-col overflow-hidden bg-lightpink max-[1100px]:flex"
+        id="sidebar"
+        style="
+          box-shadow:
+            rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        "
+      >
+        <div
+          class="close-icon toggle-btn absolute right-4 top-4"
+          onclick="toggleSidebar()"
+        >
+          <iconify-icon
+            icon="material-symbols:close"
+            width="28"
+            height="28"
+          ></iconify-icon>
+        </div>
+        <!-- <div>
+        <img
+          class="px-3 w-[50%]"
+          src="./Home/icons/Divueenlogo.png"
+          alt=""
+          srcset=""
+        />
+      </div> -->
+        <ul
+          class="flex-1 flex-col gap-4 pt-8 text-gray-500 child:px-4 child:py-2 hover:child:bg-[#ffdced] hover:child:text-black"
+        >
+          <li><a class="whitespace-nowrap" href="index.html">Makeup</a></li>
+          <li><a class="whitespace-nowrap" href="index.html">Skin</a></li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Hair Care</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Bath & Body</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Health & Wellness</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Mom & Baby</a>
+          </li>
+          <li><a class="whitespace-nowrap" href="index.html">Men</a></li>
+          <li><a class="whitespace-nowrap" href="index.html">Sale</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- main container -->
     <div class="flex justify-center border-2 border-solid border-black">
       <!-- left main conatainer -->
@@ -456,5 +643,40 @@
         </div>
       </div>
     </footer>
+    <script>
+      var sidebar = document.getElementById("sidebar");
+      var navopen = false;
+      function toggleSidebar() {
+        // var sidebar = document.getElementById("sidebar");
+        // console.log(sidebar.style.left);
+        sidebar.style.left =
+          sidebar.style.left === "-300px" || sidebar.style.left === ""
+            ? "0"
+            : "-300px";
+        // navopen =
+        //   sidebar.style.left === "-300px" || sidebar.style.left === ""
+        //     ? false
+        //     : true;
+        document.body.style.overflow =
+          sidebar.style.left === "-300px" ? "auto" : "hidden";
+      }
+
+      addEventListener("resize", (event) => {});
+
+      onresize = (event) => {
+        // console.log(screen.width);
+        if (screen.width > "1100") {
+          sidebar.style.display = "none";
+          if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+          }
+          document.body.style.overflow = "auto";
+        }
+
+        if (screen.width <= "1100") {
+          sidebar.style.display = "flex";
+        }
+      };
+    </script>
   </body>
 </html>
