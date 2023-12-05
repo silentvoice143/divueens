@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- google font 
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arapey&family=Cormorant+Garamond&family=Kaushan+Script&family=Lobster&family=Merriweather&family=Montserrat&family=Mulish&family=Nunito&family=Pacifico&family=Quicksand:wght@300;400;600&family=Roboto&family=Rokkitt&family=Sail&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css  -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <style>
+      .sidebar {
+        overflow-y: auto;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      <header class="">
+        <nav class="navbar w-full">
+          <div class="brand relative flex h-[4rem] items-center">
+            <!-- <h1 class="font-kaushan text-[3rem]">Divueens</h1> -->
+            <img
+              class="absolute h-full px-[2%]"
+              src="../divueenimg/Divueenlogo.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="absolute z-[-10] h-full w-full"
+              src="../Home/icons/navgraphic.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="navlist flex h-[4rem] items-center justify-between bg-lightpink px-[2%]"
+          >
+            <div
+              class="menuicon hidden max-[1100px]:block"
+              onclick="toggleSidebar()"
+            >
+              <iconify-icon
+                icon="ion:menu"
+                width="28"
+                height="28"
+              ></iconify-icon>
+            </div>
+            <ul
+              class="flex gap-2 text-gray-500 child:px-2 child:py-1 hover:child:text-black max-[1100px]:hidden max-[1000px]:gap-1"
+            >
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Makeup</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Skin</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Hair Care</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Bath & Body</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html"
+                  >Health & Wellness</a
+                >
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Mom & Baby</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Men</a>
+              </li>
+              <li>
+                <a class="whitespace-nowrap" href="index.html">Sale</a>
+              </li>
+            </ul>
+            <div class="flex gap-[3vw]">
+              <div class="relative box-border">
+                <iconify-icon
+                  class="absolute left-1 top-1"
+                  icon="tabler:search"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <iconify-icon
+                  class="absolute right-8 top-1"
+                  icon="mdi:camera-outline"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <iconify-icon
+                  class="absolute right-1 top-1"
+                  icon="material-symbols:mic-outline"
+                  style="color: #777"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <input
+                  class="h-8 w-[18vw] min-w-[200px] rounded-md border-2 bg-[#f1e2e8] pl-8 pr-[4rem] text-gray-500 outline-none focus:border-navpink"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="navicon">
+                <ul class="flex gap-4">
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/bag.png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/heart.png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                  <li class="relative h-[25px] w-[25px]">
+                    <a href=""
+                      ><img
+                        class="absolute h-full w-full"
+                        src="../Home/icons/user (1).png"
+                        alt=""
+                        srcset=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end header -->
+
+      <!-- sidenav start  -->
+
+      <div
+        class="sidebar screenlist fixed bottom-0 left-[-300px] top-[4rem] z-[200] hidden w-[300px] flex-col overflow-hidden bg-lightpink max-[1100px]:flex"
+        id="sidebar"
+        style="
+          box-shadow:
+            rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        "
+      >
+        <div
+          class="close-icon toggle-btn absolute right-4 top-4"
+          onclick="toggleSidebar()"
+        >
+          <iconify-icon
+            icon="material-symbols:close"
+            width="28"
+            height="28"
+          ></iconify-icon>
+        </div>
+        <!-- <div>
+              <img
+                class="px-3 w-[50%]"
+                src="./Home/icons/Divueenlogo.png"
+                alt=""
+                srcset=""
+              />
+            </div> -->
+        <ul
+          class="flex-1 flex-col gap-4 pt-8 text-gray-500 child:px-4 child:py-2 hover:child:bg-[#ffdced] hover:child:text-black"
+        >
+          <li><a class="whitespace-nowrap" href="index.html">Makeup</a></li>
+          <li><a class="whitespace-nowrap" href="index.html">Skin</a></li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Hair Care</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Bath & Body</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Health & Wellness</a>
+          </li>
+          <li>
+            <a class="whitespace-nowrap" href="index.html">Mom & Baby</a>
+          </li>
+          <li><a class="whitespace-nowrap" href="index.html">Men</a></li>
+          <li><a class="whitespace-nowrap" href="index.html">Sale</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cartsection relative flex max-[960px]:flex-col">
+      <div
+        class="cart-left mx-[5%] w-[60vw] py-[5rem] max-[960px]:mx-0 max-[960px]:w-full max-[960px]:px-[5%]"
+      >
+        <div
+          class="heading flex justify-between border-b-2 border-black py-2 text-4xl font-semibold"
+        >
+          <h1>My Cart</h1>
+          <h1>2 Items</h1>
+        </div>
+        <div class="flex py-4 text-gray-400 max-[680px]:text-sm">
+          <p class="w-[60%] max-[680px]:w-[40%]">PRODUCT DETAIL</p>
+          <div class="flex w-[40%] justify-between max-[680px]:w-[60%]">
+            <p>PRICE</p>
+            <p>QUANTITY</p>
+            <p>TOTAL</p>
+          </div>
+        </div>
+
+        <!-- ________products_________ -->
+
+        <div class="flex border-b-[2px] border-gray-200 py-8">
+          <div class="relative w-[60%] max-[680px]:w-[40%]">
+            <div class="relative flex max-[680px]:mr-8 max-[680px]:flex-col">
+              <div
+                class="flex-0 relative mr-8 h-[160px] w-[250px] max-[680px]:m-0 max-[680px]:w-[100%]"
+              >
+                <img
+                  class="absolute h-full w-full"
+                  src="./1-jpg.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div
+                class="relative pr-8 max-[680px]:p-0 max-[680px]:text-[0.9rem]"
+              >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p
+                  class="mt-8 text-sm max-[680px]:absolute max-[680px]:right-[-4rem] max-[680px]:top-0 max-[680px]:m-0"
+                >
+                  80ml
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-[40%] justify-between max-[680px]:w-[60%]">
+            <p>Rs300</p>
+            <div class="flex items-start">
+              <div class="flex">
+                <button
+                  type="button"
+                  class="rounded-l-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="decrementQuantity('quantity1')"
+                >
+                  -
+                </button>
+
+                <input
+                  type="number"
+                  id="quantity1"
+                  name="quantity"
+                  class="w-8 border-b border-t border-gray-300 px-1 py-0.5 text-center text-sm outline-none"
+                  min="1"
+                  value="1"
+                />
+
+                <button
+                  type="button"
+                  class="rounded-r-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="incrementQuantity('quantity1')"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <p>Rs144</p>
+          </div>
+        </div>
+        <div class="flex border-b-[2px] border-gray-200 py-8">
+          <div class="relative w-[60%] max-[680px]:w-[40%]">
+            <div class="relative flex max-[680px]:mr-8 max-[680px]:flex-col">
+              <div
+                class="flex-0 relative mr-8 h-[160px] w-[250px] max-[680px]:m-0 max-[680px]:w-[100%]"
+              >
+                <img
+                  class="absolute h-full w-full"
+                  src="./1-jpg.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div
+                class="relative pr-8 max-[680px]:p-0 max-[680px]:text-[0.9rem]"
+              >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p
+                  class="mt-8 text-sm max-[680px]:absolute max-[680px]:right-[-4rem] max-[680px]:top-0 max-[680px]:m-0"
+                >
+                  80ml
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-[40%] justify-between max-[680px]:w-[60%]">
+            <p>Rs300</p>
+            <div class="flex items-start">
+              <div class="flex">
+                <button
+                  type="button"
+                  class="rounded-l-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="decrementQuantity('quantity2')"
+                >
+                  -
+                </button>
+
+                <input
+                  type="number"
+                  id="quantity2"
+                  name="quantity"
+                  class="w-8 border-b border-t border-gray-300 px-1 py-0.5 text-center text-sm outline-none"
+                  min="1"
+                  value="1"
+                />
+
+                <button
+                  type="button"
+                  class="rounded-r-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="incrementQuantity('quantity2')"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <p>Rs144</p>
+          </div>
+        </div>
+        <div class="flex border-b-[2px] border-gray-200 py-8">
+          <div class="relative w-[60%] max-[680px]:w-[40%]">
+            <div class="relative flex max-[680px]:mr-8 max-[680px]:flex-col">
+              <div
+                class="flex-0 relative mr-8 h-[160px] w-[250px] max-[680px]:m-0 max-[680px]:w-[100%]"
+              >
+                <img
+                  class="absolute h-full w-full"
+                  src="./1-jpg.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div
+                class="relative pr-8 max-[680px]:p-0 max-[680px]:text-[0.9rem]"
+              >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p
+                  class="mt-8 text-sm max-[680px]:absolute max-[680px]:right-[-4rem] max-[680px]:top-0 max-[680px]:m-0"
+                >
+                  80ml
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-[40%] justify-between max-[680px]:w-[60%]">
+            <p>Rs300</p>
+            <div class="flex items-start">
+              <div class="flex">
+                <button
+                  type="button"
+                  class="rounded-l-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="decrementQuantity('quantity3')"
+                >
+                  -
+                </button>
+
+                <input
+                  type="number"
+                  id="quantity3"
+                  name="quantity"
+                  class="w-8 border-b border-t border-gray-300 px-1 py-0.5 text-center text-sm outline-none"
+                  min="1"
+                  value="1"
+                />
+
+                <button
+                  type="button"
+                  class="rounded-r-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="incrementQuantity('quantity3')"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <p>Rs144</p>
+          </div>
+        </div>
+        <div class="flex border-b-[2px] border-gray-200 py-8">
+          <div class="relative w-[60%] max-[680px]:w-[40%]">
+            <div class="relative flex max-[680px]:mr-8 max-[680px]:flex-col">
+              <div
+                class="flex-0 relative mr-8 h-[160px] w-[250px] max-[680px]:m-0 max-[680px]:w-[100%]"
+              >
+                <img
+                  class="absolute h-full w-full"
+                  src="./1-jpg.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div
+                class="relative pr-8 max-[680px]:p-0 max-[680px]:text-[0.9rem]"
+              >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p
+                  class="mt-8 text-sm max-[680px]:absolute max-[680px]:right-[-4rem] max-[680px]:top-0 max-[680px]:m-0"
+                >
+                  80ml
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-[40%] justify-between max-[680px]:w-[60%]">
+            <p>Rs300</p>
+            <div class="flex items-start">
+              <div class="flex">
+                <button
+                  type="button"
+                  class="rounded-l-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="decrementQuantity('quantity4')"
+                >
+                  -
+                </button>
+
+                <input
+                  type="number"
+                  id="quantity4"
+                  name="quantity"
+                  class="w-8 border-b border-t border-gray-300 px-1 py-0.5 text-center text-sm outline-none"
+                  min="1"
+                  value="1"
+                />
+
+                <button
+                  type="button"
+                  class="rounded-r-md border border-gray-300 px-1 py-0.5 text-xs focus:outline-none"
+                  onclick="incrementQuantity('quantity4')"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <p>Rs144</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- cart order summary----------- -->
+
+      <div
+        class="cart-right sticky right-0 top-0 h-[100vh] flex-1 bg-[#f5f5f5] px-[5%] pt-[3%] max-[960px]:static max-[960px]:py-[5rem]"
+      >
+        <h1
+          class="summary border-b-2 border-gray-500 py-2 text-center text-4xl font-semibold"
+        >
+          Order Summary
+        </h1>
+        <div
+          class="border-b-[2px] border-gray-400 pb-8"
+          style="font-family: Quicksand, sans-serif"
+        >
+          <div class="flex justify-between gap-4 py-6">
+            <p>Item <span>2</span></p>
+            <p>Rs1500</p>
+          </div>
+          <div class="flex justify-between gap-4 py-6">
+            <p>SHIPPING CHARGES</p>
+            <p>Rs1500</p>
+          </div>
+          <div>
+            <p>PROMO CODE</p>
+            <input
+              style="
+                box-shadow:
+                  rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+                  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+              "
+              class="w-full rounded-lg px-4 py-2 outline-none"
+              type="text"
+              placeholder="Enter Your code "
+            />
+            <button
+              class="my-4 h-[35px] w-[111px] whitespace-nowrap rounded-full bg-gradient-to-r from-[#FF5BB1] to-[#FDCEDD] text-sm font-semibold text-white"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+        <div class="total">
+          <div class="flex justify-between gap-4 py-6">
+            <p>TOTAL COST</p>
+            <p>Rs1500</p>
+          </div>
+          <button
+            class="my-4 h-[40px] w-full whitespace-nowrap rounded-xl bg-gradient-to-r from-[#FF5BB1] to-[#FDCEDD] text-sm font-semibold text-white"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-cardpink">
+      <div class="footer px-[10%] py-[4rem] pt-8 font-quicksand">
+        <div
+          class="footer-grid-box ml-[6%] grid grid-cols-5 gap-12 child:w-[150px] max-[960px]:grid-cols-3 max-[680px]:grid-cols-1"
+        >
+          <div class="first">
+            <img src="../divueenimg/Divueenlogo.png" class="w-[108px]" alt="" />
+            <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+              <li class=""><a href="">About Us</a></li>
+              <li><a href="">Career</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Authenticity</a></li>
+            </ul>
+          </div>
+          <div class="second">
+            <h1 class="text-2xl font-semibold">Categories</h1>
+            <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+              <li class=""><a href="">Makeup</a></li>
+              <li><a href="">Skincare</a></li>
+              <li><a href="">Hair Appliances</a></li>
+              <li><a href="">Bath & Body</a></li>
+              <li><a href="">Health & Wellness</a></li>
+              <li><a href="">Mom & Baby</a></li>
+            </ul>
+          </div>
+          <div class="third">
+            <h1 class="text-2xl font-semibold">Direct Link</h1>
+            <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+              <li class=""><a href="">New Launch</a></li>
+              <li><a href="">Discounts</a></li>
+              <li><a href="">Offers</a></li>
+              <li><a href="">Bestseller</a></li>
+              <li><a href="">Sale</a></li>
+            </ul>
+          </div>
+          <div class="fourth">
+            <h1 class="text-2xl font-semibold">Contact Us</h1>
+            <ul class="my-4 text-[1rem] child:my-2 hover:child:underline">
+              <li class=""><a href="">Address-</a></li>
+              <li><a href="">Mail-</a></li>
+              <li><a href="">Phone No-</a></li>
+            </ul>
+          </div>
+          <div class="fifth">
+            <h1 class="text-2xl font-semibold">Socials</h1>
+            <ul class="my-4 text-[1rem] child:my-2">
+              <li class=""><a href="">About Us</a></li>
+              <li><a href="">Career</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var sidebar = document.getElementById("sidebar");
+      var navopen = false;
+      function toggleSidebar() {
+        // var sidebar = document.getElementById("sidebar");
+        // console.log(sidebar.style.left);
+        sidebar.style.left =
+          sidebar.style.left === "-300px" || sidebar.style.left === ""
+            ? "0"
+            : "-300px";
+        // navopen =
+        //   sidebar.style.left === "-300px" || sidebar.style.left === ""
+        //     ? false
+        //     : true;
+        document.body.style.overflow =
+          sidebar.style.left === "-300px" ? "auto" : "hidden";
+      }
+
+      addEventListener("resize", (event) => {});
+
+      onresize = (event) => {
+        // console.log(screen.width);
+        if (screen.width > "1100") {
+          sidebar.style.display = "none";
+          if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+          }
+          document.body.style.overflow = "auto";
+        }
+
+        if (screen.width <= "1100") {
+          sidebar.style.display = "flex";
+        }
+      };
+
+      // for quantity
+
+      function incrementQuantity(inputId) {
+        const quantityInput = document.getElementById(inputId);
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+      }
+
+      function decrementQuantity(inputId) {
+        const quantityInput = document.getElementById(inputId);
+        const newValue = parseInt(quantityInput.value) - 1;
+        quantityInput.value = Math.max(newValue, 1); // Ensure the quantity does not go below 1
+      }
+    </script>
+  </body>
+</html>
