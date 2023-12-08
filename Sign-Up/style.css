@@ -1,92 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif,monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, monospace;
 }
-body, html{
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-    display: flex;
-    overflow: hidden;
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffe8f0;
+  display: flex;
+  overflow: hidden;
 }
-.left-content{
-    width: 50%;
-    height: 100vh;
+.left-content {
+  width: 50%;
+  height: 100vh;
 }
-.img{
-    background-image: url(Images/Ellipse\ 26.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+.img {
+  background-image: url(Images/Ellipse\ 26.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
-.box1{
-    width: 35%;
-    color: white;
-    font-size: larger;
-    position: absolute;
-    top: 4rem;
-    left: 3rem;
+.box1 {
+  width: 35%;
+  color: white;
+  font-size: larger;
+  position: absolute;
+  top: 4rem;
+  left: 3rem;
 }
-.box1 button{
-    margin-top: 2rem;
-    padding: 10px;
-    padding-right: 3.7rem;
-    padding-left: 3.7rem;
-    border-radius: 1.5rem;
-    border: 3px solid white;
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+.box1 button {
+  margin-top: 2rem;
+  padding: 10px;
+  padding-right: 3.7rem;
+  padding-left: 3.7rem;
+  border-radius: 1.5rem;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
-.box2{
-    position: absolute;
-    top: 22rem;
-    left: 3rem;
+.box2 {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
 }
-.box2 img{
+.box2 img {
   width: 90%;
 }
-.box-content{
-    display: flex;
-    flex-direction: column;
-    column-gap: 10rem;
+.box-content {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10rem;
 }
-.right-content{
+.right-content {
   width: 50%;
   padding: 15px;
 }
-.box-1{
+.box-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.box-1 img{
+.box-1 img {
   margin-top: 2.5rem;
   width: 19%;
 }
-.box-1 h1{
+.box-1 h1 {
   margin-top: 2rem;
 }
-.box-2  {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 30px;
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
-.box2-content label{
+.box2-content label {
   font-size: large;
 }
 
-.input-with-icon input[type="text"], input[type="email"], input[type="password"] {
+.input-with-icon input[type="text"],
+input[type="email"],
+input[type="password"] {
   border: none;
   outline: none;
   width: 420px;
@@ -94,11 +97,11 @@ margin-top: 30px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   overflow: hidden;
-  border-radius:15px;
+  border-radius: 15px;
   font-size: 15px;
-  background-color:white;
+  background-color: white;
 }
-.custom-checkbox input[type="checkbox"]{
+.custom-checkbox input[type="checkbox"] {
   margin-right: 0.5rem;
   /* Increase the size of the checkbox */
   transform: scale(1.7); /* You can adjust the scale factor as needed */
@@ -125,23 +128,29 @@ margin-top: 30px;
   cursor: pointer;
 }
 .input-with-icon i.fa-eye:hover {
-  color:black;
+  color: black;
 }
 
 /* Adjust icon size */
-.input-with-icon i.fa-user,i.fa-envelope,i.fa-lock,i.fa-eye {
+.input-with-icon i.fa-user,
+i.fa-envelope,
+i.fa-lock,
+i.fa-eye {
   font-size: 18px;
 }
 
 /* Adjust icon color */
-.input-with-icon i.fa-user,i.fa-envelope,i.fa-lock,i.fa-eye {
+.input-with-icon i.fa-user,
+i.fa-envelope,
+i.fa-lock,
+i.fa-eye {
   color: #999;
 }
-.button{
+.button {
   text-align: center;
   margin-top: 1.5rem;
 }
-.button button{
+.button button {
   color: white;
   background-color: #e75480;
   padding: 15px;
@@ -153,50 +162,51 @@ margin-top: 30px;
   font-weight: bold;
   font-size: 16px;
 }
-.horizontal-line{
+.horizontal-line {
   margin-top: 30px;
   text-align: center;
 }
-.social{
+.social {
   margin-top: 20px;
   text-align: center;
 }
-.social img{
+.social img {
   width: 35px;
 }
-@media  screen and (max-width: 768px){
-   .left-content{
+@media screen and (max-width: 768px) {
+  .left-content {
     display: none;
-   }
-   .right-content{
+  }
+  .right-content {
     width: 100%;
     height: 100vh;
     font-size: 1.2rem;
-   }
-   .box2-content{
+  }
+  .box2-content {
     align-items: center;
-   }
-   .input-with-icon input[type="text"], input[type="email"], input[type="password"]{
+  }
+  .input-with-icon input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     width: 100%;
-   }
-   .box-1 img{
+  }
+  .box-1 img {
     margin-top: 1rem;
     width: 30%;
-   }
-   .box-1 h1{
+  }
+  .box-1 h1 {
     font-size: 1.2rem;
-   }
-   .box-2{
+  }
+  .box-2 {
     margin-top: 10px;
-   }
-   .horizontal-line{
+  }
+  .horizontal-line {
     margin-top: 10px;
-   }
-   .horizontal-line img{
+  }
+  .horizontal-line img {
     width: 100%;
-   }
-   .input-with-icon i{
+  }
+  .input-with-icon i {
     margin-top: 15px;
-   }
+  }
 }
-  
