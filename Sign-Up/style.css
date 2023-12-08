@@ -171,9 +171,7 @@ margin-top: 30px;
    .right-content{
     width: 100%;
     height: 100vh;
-    font-size: 2.5rem;
-    scroll-behavior: auto;
-    overflow-y: scroll;
+    font-size: 1.2rem;
    }
    .box2-content{
     align-items: center;
@@ -198,7 +196,7 @@ margin-top: 30px;
     width: 100%;
    }
    .input-with-icon i{
-    margin-top: 22px;
+    margin-top: 15px;
    }
 }
   
