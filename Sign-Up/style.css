@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
   font-family: sans-serif, monospace;
 }
-body,
-html {
-  height: 100%;
-}
+
 .container {
   width: 100%;
   height: 100%;
@@ -17,7 +18,7 @@ html {
 }
 .left-content {
   width: 50%;
-  height: 100vh;
+  height: 100%;
 }
 .img {
   background-image: url(Images/Ellipse\ 26.png);
@@ -26,15 +27,15 @@ html {
   background-size: cover;
   background-position: center;
 }
-.box1 {
+.left-content .box1 {
   width: 35%;
   color: white;
-  font-size: larger;
+  font-size: large;
   position: absolute;
   top: 4rem;
   left: 3rem;
 }
-.box1 button {
+.left-content .box1 button {
   margin-top: 2rem;
   padding: 10px;
   padding-right: 3.7rem;
@@ -46,86 +47,82 @@ html {
   font-weight: bold;
   cursor: pointer;
 }
-.box2 {
+.left-content .box2 {
   position: absolute;
   top: 22rem;
   left: 3rem;
 }
-.box2 img {
+.left-content .box2 img {
   width: 90%;
 }
-.box-content {
+.left-content .box-content {
   display: flex;
   flex-direction: column;
   column-gap: 10rem;
 }
-.right-content {
+.right-content{
   width: 50%;
-  padding: 15px;
+  height: 100%;
+  padding: 30px 0;
 }
-.box-1 {
+.right-content .box-1 {
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.box-1 img {
-  margin-top: 2.5rem;
-  width: 19%;
-}
-.box-1 h1 {
-  margin-top: 2rem;
-}
-.box-2 {
+.right-content .box-1 img {
+  padding: 10px 0;
+   width: 20%;
+ }
+ .right-content .box-2 {
+  width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
-.box2-content label {
-  font-size: large;
+.right-content .box2-content label {
+  padding-left: 10px;
+  font-size: small;
 }
-
 .input-with-icon input[type="text"],
 input[type="email"],
 input[type="password"] {
   border: none;
   outline: none;
-  width: 420px;
-  padding: 15px 35px;
-  margin-bottom: 10px;
+  width: 310px;
+  padding: 10px 35px;
+  margin-bottom: 5px;
   border: 1px solid #ccc;
   overflow: hidden;
   border-radius: 15px;
-  font-size: 15px;
+  font-size:small;
   background-color: white;
 }
-.custom-checkbox input[type="checkbox"] {
-  margin-right: 0.5rem;
-  /* Increase the size of the checkbox */
-  transform: scale(1.7); /* You can adjust the scale factor as needed */
-  cursor: pointer;
-  margin-left: 5px;
+.custom-checkbox{
+  margin-left: 10px;
+  display: flex;
 }
-/* Style the icon and position it */
+.input-with-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
 .input-with-icon i {
   position: absolute;
-  margin-top: 16px;
   margin-left: 10px;
 }
 
-/* Position the input field and icon together */
-.input-with-icon {
-  position: relative;
-  display: inline-block;
-}
 .input-with-icon i.fa-eye {
   position: absolute;
-  top: 15%;
   right: 5px;
-  transform: translateY(-50%);
   cursor: pointer;
+  margin-top: -5px;
+  margin-right: 5px;
 }
 .input-with-icon i.fa-eye:hover {
   color: black;
@@ -136,7 +133,8 @@ input[type="password"] {
 i.fa-envelope,
 i.fa-lock,
 i.fa-eye {
-  font-size: 18px;
+  margin-top: -5px;
+  font-size: 15px;
 }
 
 /* Adjust icon color */
@@ -147,32 +145,32 @@ i.fa-eye {
   color: #999;
 }
 .button {
+  height: 90px;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 10px;
 }
 .button button {
   color: white;
   background-color: #e75480;
-  padding: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
 }
 .horizontal-line {
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
 }
 .social {
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 .social img {
-  width: 35px;
+  width: 27px;
 }
+
 @media screen and (max-width: 768px) {
   .left-content {
     display: none;
@@ -185,11 +183,6 @@ i.fa-eye {
   .box2-content {
     align-items: center;
   }
-  .input-with-icon input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-  }
   .box-1 img {
     margin-top: 1rem;
     width: 30%;
@@ -201,12 +194,10 @@ i.fa-eye {
     margin-top: 10px;
   }
   .horizontal-line {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .horizontal-line img {
-    width: 100%;
+    width: 70%;
   }
-  .input-with-icon i {
-    margin-top: 15px;
-  }
+
 }
